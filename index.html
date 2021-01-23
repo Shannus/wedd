@@ -108,7 +108,71 @@ border:5px solid #827g82;
 border-radius:50px;
       height:150px;
     width:250px;
+      margin-left:45px;
 }
+.avenue
+{
+font-family: 'Architects Daughter', cursive;
+font-family: 'Sacramento', cursive;
+}
+section { 
+                position: relative; 
+                 width: 80vh; 
+                height: 40vh;
+                background-size: cover; 
+                background-position: center; 
+                animation: color-change 10s linear infinite; 
+                animation-delay: 1s; 
+		border-radius:30px;
+		margin-left:250px;
+            } 
+            /*adding rain img and making opacity 0*/ 
+            section:before { 
+                content: ""; 
+border-radius:30px;
+		top:0;
+		left:0;
+                position: absolute; 
+                width: 80vh; 
+                height: 40vh;
+                background-image: url( 
+https://media.geeksforgeeks.org/wp-content/uploads/20200828184719/rain-300x300.png); 
+                animation: rain 0.3s linear infinite; 
+                opacity: 0; 
+            } 
+            /* just changing the position of image  
+          of rain using keyframes*/ 
+            @keyframes rain { 
+                0% { 
+                    background-position: 0 0; 
+                    opacity: 0; 
+                } 
+                50%
+		{
+		opacity:.3
+		}
+		
+                100% { 
+                    background-position: 8% 80%; 
+                    opacity: 1; 
+                } 
+            } 
+            /* applying filter at different angle 
+          on diffrent interval using keyframe*/ 
+            @keyframes color-change { 
+                0% { 
+                    filter: hue-rotate(0deg);
+                    background-color:white; 
+			background-color:black;
+                } 
+                10% { 
+                    filter: hue-rotate(180deg); 
+                } 
+                100% { 
+                    filter: hue-rotate(360deg); 
+                    
+                } 
+            } 
 @media only screen and (min-device-width : 950px){
   .first{
     border: 6px solid #ffc2ff;
@@ -161,6 +225,10 @@ Muhurtham:22nd February 2021,Monday<br>9.00 AM to 10.30 AM<br>Venue:<a href="htt
  <p class="venue2">
 Engagement:21st February 2021,Monday<br>7 PM onwards <br>Venue:Rajeshwari mahal<br>Burma colony,Kottayur Road,Karaikudi
 </p>
+<section style="background-color:black">
+<p class="avenue">
+Rain or shine<br>No escape please<br>As you are not just invited<br>You are most expected</p>
+</section> 
 <script>
 
 // Set the date we're counting down to
