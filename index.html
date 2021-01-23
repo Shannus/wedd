@@ -110,68 +110,11 @@ border-radius:50px;
     width:250px;
       margin-left:45px;
 }
-section { 
-                position: relative; 
-                 width: 250px; 
-                height: 150px;
-                background-size: cover; 
-                background-position: center; 
-                animation: color-change 10s linear infinite; 
-                animation-delay: 1s; 
-		border-radius:30px;
-		margin-left:250px;
-            } 
-            /*adding rain img and making opacity 0*/ 
-            section:before { 
-                content: ""; 
-border-radius:30px;
-		top:0;
-		left:0;
-                position: absolute; 
-                width: 250px; 
-                height: 150px;
-                background-image: url( 
-https://media.geeksforgeeks.org/wp-content/uploads/20200828184719/rain-300x300.png); 
-                animation: rain 0.3s linear infinite; 
-                opacity: 0; 
-            } 
-            /* just changing the position of image  
-          of rain using keyframes*/ 
-            @keyframes rain { 
-                0% { 
-                    background-position: 0 0; 
-                    opacity: 0; 
-                } 
-                50%
-		{
-		opacity:.3
-		}
-		
-                100% { 
-                    background-position: 8% 80%; 
-                    opacity: 1; 
-                } 
-            } 
-            /* applying filter at different angle 
-          on diffrent interval using keyframe*/ 
-            @keyframes color-change { 
-                0% { 
-                    filter: hue-rotate(0deg);
-                    background-color:white; 
-			background-color:black;
-                } 
-                10% { 
-                    filter: hue-rotate(180deg); 
-                } 
-                100% { 
-                    filter: hue-rotate(360deg); 
-                    
-                } 
-            } 
 .avenue
 {
+text-align:center;
 font-color:red;
-font-size:30px;
+font-size:20px;
 font-family: 'Architects Daughter', cursive;
 font-family: 'Sacramento', cursive;
 }
