@@ -213,19 +213,18 @@ font-family: 'Sacramento', cursive;
   box-sizing: border-box;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 }
-	section { 
-		 display: block;
-  		margin-left: auto;
- 		 margin-right: auto;
+section { 
                 position: relative; 
                  width: 255px; 
                 height: 155px;
+	display: block;
+  margin-left: auto;
+  margin-right: auto;
                 background-size: cover; 
                 background-position: center; 
                 animation: color-change 10s linear infinite; 
-                animation-delay: 1s; 
+                animation-delay: 5s; 
 		border-radius:30px;
-		color:white;
 		            } 
             /*adding rain img and making opacity 0*/ 
             section:before { 
@@ -233,12 +232,11 @@ font-family: 'Sacramento', cursive;
 border-radius:30px;
 		top:0;
 		left:0;
-		 color:white;
-		display: block;
-  		margin-left: auto;
-  		margin-right: auto;
                 position: absolute; 
-                width: 255px; 
+                width: 255px;
+		    display: block;
+  margin-left: auto;
+  margin-right: auto;
                 height: 155px;
                 background-image: url( 
 https://media.geeksforgeeks.org/wp-content/uploads/20200828184719/rain-300x300.png); 
@@ -252,7 +250,7 @@ https://media.geeksforgeeks.org/wp-content/uploads/20200828184719/rain-300x300.p
                     background-position: 0 0; 
                     opacity: 0; 
                 } 
-                60%
+                50%
 		{
 		opacity:.3
 		}
@@ -277,7 +275,7 @@ https://media.geeksforgeeks.org/wp-content/uploads/20200828184719/rain-300x300.p
                     filter: hue-rotate(360deg); 
                     
                 } 
-            } 
+            }  
 @media only screen and (min-device-width : 950px){
   .first{
     border: 6px solid #ffc2ff;
