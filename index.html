@@ -403,13 +403,6 @@ Rain or shine<br>No escape please!<br>As you are not just invited<br>You are mos
 <div class="laast">
 </div>
 <script>
-<script>
-  var music = document.getElementById("music")
-  music.load();
-  document.addEventListener("click", function() {
-  music.play()
-  })
-  </script>
 // Set the date we're counting down to
 var countDownDate = new Date("feb 22, 2021 9:00:00").getTime();
 
@@ -438,5 +431,10 @@ var x = setInterval(function() {
     document.getElementById("f").innerHTML = "EXPIRED";
   }
 }, 1000);
+  var music = document.getElementById("music")
+  music.load();
+  document.addEventListener("click", function() {
+  music.play()
+  })
 </script>
 </body>
