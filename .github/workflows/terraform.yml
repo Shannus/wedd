@@ -6,6 +6,16 @@ on:
       - main
   workflow_dispatch:
     inputs:
+      environment:
+        description: 'Environment prefix where we want the CB node to be restarted'
+        required: true
+        type: choice
+        options:
+          - 'd'
+          - 'q'
+          - 's'
+          - 'p'
+
       example_input:
         description: 'An example input'
         required: true
@@ -22,3 +32,4 @@ jobs:
       - name: Run Terraform
         run: |
           echo "Running Terraform with input: ${{ github.event.inputs.example_input }}"
+          echo "Selected environment: ${{ github.event.inputs.environment }}"
