@@ -1,0 +1,17 @@
+name: My Simple Action
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Run a simple script
+        run: echo "Hello, World! This action ran on push to main."
