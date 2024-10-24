@@ -1,21 +1,17 @@
 name: Terraform Workflow
 
 on:
-  push:
-    branches:
-      - main
   workflow_dispatch:
     inputs:
       environment:
         description: 'Environment prefix where we want the CB node to be restarted'
-        required: true
         type: choice
         options:
           - 'd'
           - 'q'
           - 's'
           - 'p'
-
+         required: true
       example_input:
         description: 'An example input'
         required: true
