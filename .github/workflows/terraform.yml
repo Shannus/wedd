@@ -11,7 +11,7 @@ on:
           - 'q'
           - 's'
           - 'p'
-         required: true
+        required: true
       example_input:
         description: 'An example input'
         required: true
