@@ -4,6 +4,12 @@ on:
   push:
     branches:
       - main
+  workflow_dispatch:
+    inputs:
+      example_input:
+        description: 'An example input'
+        required: true
+        default: 'default value'
 
 jobs:
   build:
@@ -14,4 +20,4 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Run a simple script
-        run: echo "Hello, World! This action ran on push to main."
+        run: echo "Hello, World! This action ran on push to main with input: ${{ github.event.inputs.example_input }}"
